@@ -1,0 +1,255 @@
+/* Home.css */
+
+
+
+.gradient-blue {
+  background: linear-gradient(135deg, #6C63FF, #4F46E5);
+}
+
+
+
+
+
+
+
+
+/* Add headings to sections */
+.section-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+/* Sidebar Styles */
+.show-sidebar {
+  width: 300px;
+}
+
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100%;
+
+  background-color: #1c1717;
+  overflow-y: auto;
+  transition: left 0.3s ease-in-out;
+}
+/* Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Sidebar Toggle Button */
+.sidebar-toggle {
+  margin-top: 10px;
+  background-color: #1a202c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.sidebar-toggle:hover {
+  background-color: #2d3748;
+}
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar-field {
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.sidebar-field:hover {
+  background-color: #d7bbbb;
+}
+
+.sidebar-field.selected {
+  background-color: #549f2f;
+}
+
+.close-sidebar {
+  width: 100%;
+  padding: 8px 16px;
+  background-color: #2d1010;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+
+
+.close-sidebar:hover {
+  background-color: #1f273d;
+}
+
+
+/* Style for the ExpandVue button */
+/* Style for the ExpandVue button */
+.sidebar-toggle {
+  visibility: visible;
+  font-size: 14px;
+  font-weight: bold;
+  color: #007bff; /* Blue color for a modern look */
+  text-decoration: none;
+  padding: 8px 16px; /* Increased padding for a more clickable area */
+  border: 2px solid #007bff; /* Add a border */
+  border-radius: 6px; /* Rounded corners */
+  background-color: transparent; /* Transparent background */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transitions */
+}
+
+.sidebar-toggle:hover {
+  background-color: #007bff; /* Background color on hover */
+  color: white; /* Text color on hover */
+}
+
+/* Style for the Compiler button */
+.compiler-button {
+  visibility: visible;
+  font-size: 14px;
+  font-weight: bold;
+  color: #28a745; /* Green color for a vibrant feel */
+  text-decoration: none;
+  padding: 8px 16px; /* Increased padding for a more clickable area */
+  border: 2px solid #28a745; /* Add a border */
+  border-radius: 6px; /* Rounded corners */
+  background-color: transparent; /* Transparent background */
+  margin-left: 10px;
+  margin-top: 10px; /* Add margin to shift the button down */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transitions */
+}
+
+.compiler-button:hover {
+  background-color: #115d15; /* Background color on hover */
+  color: rgb(255, 255, 255); /* Text color on hover */
+}
+
+/* Style for the zoomed image modal */
+.modal-image {
+  max-width: 100%;
+  max-height: calc(100vh - 100px);
+  margin: 0 auto;
+  display: block;
+}
+
+/* Styling to overlay the zoomed image within the container */
+.zoomed-image-overlay {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+/* Add this to your existing Home.css or create a new CSS file */
+
+/* Style for the grid container */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+/* Style for the small images */
+.gallery-image {
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+/* Hover effect for small images */
+.gallery-image:hover {
+  transform: scale(1.05);
+}
+
+
+/* Add these styles to your CSS file */
+
+.asterisk-text {
+  color: #FF4D00; /* Playful orange color */
+  font-family: 'Poppins', sans-serif; /* Modern and friendly font */
+  font-weight: 600; /* Semi-bold weight */
+  font-size: 1.1rem; /* Slightly larger font size */
+  letter-spacing: 0.02rem; /* Slight letter spacing for emphasis */
+
+  /* Adding a gradient background that gives a vibrant and dynamic feel */
+  background-image: linear-gradient(120deg, #FF4D00, #FF8A00);
+  background-clip: text; /* Clip the background to the text */
+  -webkit-background-clip: text; /* For Safari support */
+  color: transparent; /* Make the text transparent */
+
+  /* Adding a subtle animation to the background gradient */
+  animation: gradientAnimation 3s linear infinite;
+}
+
+/* Keyframes for the gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.asterisk-text:hover {
+  color: #f40e0e; /* Brighter red on hover */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Slightly larger shadow on hover */
+}
+
+
+.tilde-text {
+  color: #00BFFF; /* Bright blue color */
+  font-family: 'Montserrat', sans-serif; /* Modern and sleek font */
+  font-weight: 600; /* Semi-bold weight */
+  font-size: 1.2rem; /* Slightly larger font size */
+  letter-spacing: 0.03rem; /* Delicate letter spacing for elegance */
+ 
+  text-decoration: none; /* Remove default underline */
+
+  /* Adding a gradient background that gives a mesmerizing feel */
+  background-image: linear-gradient(120deg, #00BFFF, #1E90FF);
+  background-clip: text; /* Clip the background to the text */
+  -webkit-background-clip: text; /* For Safari support */
+  color: transparent; /* Make the text transparent */
+
+  /* Adding a subtle animation to the background gradient */
+  animation: gradientAnimation 4s linear infinite;
+}
+
+/* Keyframes for the gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.tilde-text:hover {
+  color: #FF1493; /* Vibrant pink on hover */
+  text-shadow: 2px 2px 4px rgba(255, 20, 147, 0.5); /* Subtle shadow on hover */
+}
