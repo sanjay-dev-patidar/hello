@@ -12,10 +12,10 @@ import {
 } from "@chakra-ui/react";
 import { FaArrowCircleUp } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { SectionWrapper } from "../hoc";
+
 import { useNavigate, useLocation } from "react-router-dom";
 import ReactPlayer from "react-player";
-import Header from "./Header";
+import Header from "../Header";
 
 // eslint-disable-next-line react-refresh/only-export-components
 const Blogs = () => {
@@ -311,4 +311,4 @@ const Blogs = () => {
 };
 
 // eslint-disable-next-line react-refresh/only-export-components
-export default SectionWrapper(Blogs, "blogs");
+export default Blogs;

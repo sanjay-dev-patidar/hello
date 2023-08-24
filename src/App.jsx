@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { BrowserRouter, Route, Routes, useMatch } from "react-router-dom";
 import { Navbar, Header, Home, Blogs, Footer } from "./components";
+
 import SectionWrapper from "./hoc/SectionWrapper";
 
 const HomeWithSectionWrapper = SectionWrapper(Home, "home");
